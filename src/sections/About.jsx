@@ -4,45 +4,49 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen bg-neutral-950 px-6 py-24"
+      className="bg-neutral-950 py-24 px-6"
     >
       <div className="max-w-5xl mx-auto">
+
         <SectionTitle
           title="About Me"
-          subtitle="My journey into technology and where I'm headed."
+          subtitle="My journey into technology."
         />
 
-        <div className="space-y-6 text-lg leading-8 text-gray-300">
+        <div className="space-y-6 text-gray-300 leading-8 text-lg">
+
           <p>
-            I began my academic journey in South Africa, where I earned a
-            degree in Genetics. During my studies, I developed strong analytical,
-            research, and problem-solving skills that continue to shape the way
-            I approach technology.
+            I am a South African Computer Science student currently studying at
+            the University of Nyíregyháza in Hungary. Before transitioning into
+            technology, I completed a degree in Genetics, where I developed a
+            strong foundation in analytical thinking, research, and
+            problem-solving.
           </p>
 
           <p>
-            Today, I'm studying Computer Science at the University of
-            Nyíregyháza in Hungary. Alongside my degree, I've completed
-            professional certificates in IBM Data Analysis and Microsoft Backend
-            Development, allowing me to strengthen both my programming and
-            analytical skills.
+            Alongside my university studies, I have completed professional
+            certificates in IBM Data Analysis and Microsoft Backend Development.
+            These experiences have strengthened my programming, data analysis,
+            and software development skills while encouraging continuous
+            learning.
           </p>
 
           <p>
-            My primary career interest is Data Science because it combines data,
-            programming, and critical thinking. At the same time, I enjoy
-            building software that solves practical problems, which is why I
-            continue developing web applications and software projects.
+            My primary career interest is Data Science because I enjoy using
+            data to solve meaningful problems. At the same time, I enjoy
+            software development and building practical applications that people
+            can use.
           </p>
 
           <p>
-            I also believe in understanding technology beyond my specialization.
-            I'm currently learning cybersecurity through TryHackMe, where I've
-            developed an interest in offensive security and Red Teaming. Exploring
-            different areas of computing helps me become a more well-rounded
-            developer and problem solver.
+            I'm also expanding my knowledge of cybersecurity through TryHackMe,
+            where I've developed an interest in offensive security and Red
+            Teaming. I believe understanding multiple areas of computing helps
+            me become a more capable engineer and lifelong learner.
           </p>
+
         </div>
+
       </div>
     </section>
   );
