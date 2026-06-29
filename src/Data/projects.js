@@ -1,7 +1,16 @@
+import {
+    portfolio,
+    pokemon,
+    stocks,
+    cleaning
+} from "./projectImages";
+
+
 const projects = [
   {
     id: 1,
     title: "Portfolio Website",
+    image: portfolio,
     description:
       "A modern developer portfolio built with React, Vite, and Tailwind CSS.",
     technologies: [
@@ -17,6 +26,7 @@ const projects = [
   {
     id: 2,
     title: "Pokémon Search App",
+    image: pokemon,
     description:
       "Search Pokémon using a public API and display detailed information.",
     technologies: [
@@ -33,6 +43,7 @@ const projects = [
   {
     id: 3,
     title: "Stock Analysis Dashboard",
+    image: stocks,
     description:
       "Python dashboard that analyzes stock prices and company revenue using interactive charts.",
     technologies: [
@@ -49,6 +60,7 @@ const projects = [
   {
     id: 4,
     title: "Data Cleaning App",
+    image: cleaning,
     description:
       "Interactive Streamlit application for cleaning, transforming, and preparing datasets.",
     technologies: [
