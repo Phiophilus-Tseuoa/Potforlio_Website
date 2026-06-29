@@ -1,24 +1,36 @@
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 pt-20">
-      <div className="text-center">
-        <p className="text-lg mb-4">
+      <div className="max-w-4xl text-center">
+
+        <p className="text-blue-500 font-medium mb-4">
           Hello, I'm
         </p>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">
+        <h1 className="text-6xl font-bold mb-6">
           Siya Mzizi
         </h1>
 
-        <h2 className="text-2xl md:text-3xl text-gray-400 mb-6">
-          Computer Science Student
+        <h2 className="text-2xl text-gray-400 mb-8">
+          Computer Science Student • Aspiring Software Engineer • Data Science Enthusiast
         </h2>
 
-        <p className="max-w-xl mx-auto text-gray-300">
-          Aspiring Software Engineer and Data Scientist passionate
-          about building practical applications and solving real-world
-          problems through technology.
+        <p className="text-lg text-gray-300 leading-8 mb-10">
+          I enjoy building software, analyzing data, and continuously learning
+          new technologies. My goal is to create solutions that combine
+          programming, analytical thinking, and real-world impact.
         </p>
+
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition">
+            View Projects
+          </button>
+
+          <button className="border border-gray-600 hover:border-blue-500 px-6 py-3 rounded-xl font-semibold transition">
+            Download Resume
+          </button>
+        </div>
+
       </div>
     </section>
   );
