@@ -3,7 +3,7 @@ import TimelineItem from "../components/TimelineItem";
 
 export default function Journey() {
   return (
-    <section className="bg-black px-6 py-24">
+    <section id="journey" className="bg-black px-6 py-24">
       <div className="max-w-5xl mx-auto">
 
         <SectionTitle
