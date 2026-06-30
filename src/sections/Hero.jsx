@@ -1,5 +1,6 @@
-import site from "../constants/site";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Button from "../components/Button";
+import site from "../constants/site";
 
 export default function Hero() {
   return (
@@ -21,6 +22,34 @@ export default function Hero() {
         <p className="text-lg text-gray-300 leading-8 mb-10">
           {site.description}
         </p>
+        <div className="flex justify-center gap-6 mb-8 text-gray-400 text-xl">
+  
+  <a
+    href="https://github.com/Phiophilus-Tseuoa"
+    target="_blank"
+    rel="noreferrer"
+    className="hover:text-white transition"
+  >
+    <FaGithub />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/phiophilus-tseuoa"
+    target="_blank"
+    rel="noreferrer"
+    className="hover:text-white transition"
+  >
+    <FaLinkedin />
+  </a>
+
+  <a
+    href={`mailto:${site.email}`}
+    className="hover:text-white transition"
+  >
+    <FaEnvelope />
+  </a>
+
+</div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           
