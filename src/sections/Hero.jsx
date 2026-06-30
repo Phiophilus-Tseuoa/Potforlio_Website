@@ -1,4 +1,5 @@
 import site from "../constants/site";
+import Button from "../components/Button";
 
 export default function Hero() {
   return (
@@ -23,9 +24,11 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           
-          <a href="#projects" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition">View Projects</a>
+          <Button href="#projects">View Projects</Button>
           
-          <a href="#" className="border border-gray-600 hover:border-blue-500 px-6 py-3 rounded-xl font-semibold transition">Download Resume</a>
+          <Button href="#" variant="secondary">
+            Download Resume
+          </Button>
 
         </div>
 
