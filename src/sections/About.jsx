@@ -1,20 +1,19 @@
+import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="bg-neutral-950 py-24 px-6"
+      className="bg-neutral-950 py-24"
     >
-      <div className="max-w-5xl mx-auto">
-
+      <Container className="max-w-5xl">
         <SectionTitle
           title="About Me"
           subtitle="My journey into technology."
         />
 
         <div className="space-y-6 text-gray-300 leading-8 text-lg">
-
           <p>
             I am a South African Computer Science student currently studying at
             the University of Nyíregyháza in Hungary. Before transitioning into
@@ -44,10 +43,8 @@ export default function About() {
             Teaming. I believe understanding multiple areas of computing helps
             me become a more capable engineer and lifelong learner.
           </p>
-
         </div>
-
-      </div>
+      </Container>
     </section>
   );
 }

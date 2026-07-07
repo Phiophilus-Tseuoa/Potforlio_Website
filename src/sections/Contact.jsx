@@ -1,3 +1,4 @@
+import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 import contact from "../data/contact";
 
@@ -5,17 +6,15 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-neutral-950 py-24 px-6"
+      className="bg-neutral-950 py-24"
     >
-      <div className="max-w-4xl mx-auto">
-
+      <Container className="max-w-4xl">
         <SectionTitle
           title="Let's Connect"
           subtitle="I'm always interested in discussing software engineering, data science, and new opportunities."
         />
 
-        <div className="space-y-6 text-lg">
-
+        <div className="space-y-6 text-lg text-gray-300">
           <p>
             <strong>Email:</strong>{" "}
             <a
@@ -53,10 +52,8 @@ export default function Contact() {
           <p>
             <strong>Location:</strong> {contact.location}
           </p>
-
         </div>
-
-      </div>
+      </Container>
     </section>
   );
 }

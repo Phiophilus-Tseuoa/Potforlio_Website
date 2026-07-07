@@ -7,7 +7,7 @@ import Contact from "./sections/Contact";
 
 function App() {
   return (
-    <main className="bg-black text-white">
+    <main className="min-h-screen bg-gradient-to-b from-black via-neutral-950 to-black text-white">
       <Navbar />
       <Hero />
       <About />

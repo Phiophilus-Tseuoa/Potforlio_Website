@@ -1,3 +1,4 @@
+import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 import ProjectCard from "../components/ProjectCard";
 import projects from "../data/projects";
@@ -10,27 +11,23 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="bg-black py-24 px-6"
+      className="bg-black py-24"
     >
-      <div className="max-w-6xl mx-auto">
-
+      <Container>
         <SectionTitle
           title="Featured Projects"
           subtitle="A selection of projects that demonstrate my technical skills and problem-solving approach."
         />
 
         <div className="grid lg:grid-cols-2 gap-10">
-
           {featuredProjects.map((project) => (
             <ProjectCard
               key={project.id}
               {...project}
             />
           ))}
-
         </div>
-
-      </div>
+      </Container>
     </section>
   );
 }

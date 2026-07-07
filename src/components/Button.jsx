@@ -5,7 +5,7 @@ export default function Button({
   target = "_self",
 }) {
   const base =
-    "inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition";
+  "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1";
 
   const styles = {
     primary:
