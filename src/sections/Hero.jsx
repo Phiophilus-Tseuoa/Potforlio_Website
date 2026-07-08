@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Button from "../components/Button";
 import Container from "../components/Container";
 import site from "../constants/site";
+import resume from "../assets/documents/Tseuoa_CV.pdf";
 
 export default function Hero() {
   return (
@@ -60,10 +61,12 @@ export default function Hero() {
             View Projects
           </Button>
 
-          <Button href="#" variant="secondary">
-            Download Resume
-          </Button>
-        </div>
+          <Button 
+          href={resume}
+          variant="secondary"
+          download
+          >Download Resume</Button>
+           </div>
 
         {/* Tech Tags */}
         <div className="flex flex-wrap justify-center gap-3 mt-10">

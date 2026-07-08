@@ -1,11 +1,13 @@
 export default function Button({
-  href,
   children,
+  href,
+  onClick,
   variant = "primary",
   target = "_self",
+  download = false,
 }) {
   const base =
-  "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1";
+    "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1";
 
   const styles = {
     primary:
@@ -18,7 +20,9 @@ export default function Button({
   return (
     <a
       href={href}
+      onClick={onClick}
       target={target}
+      download={download}
       rel={target === "_blank" ? "noreferrer" : undefined}
       className={`${base} ${styles[variant]}`}
     >
