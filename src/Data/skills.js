@@ -1,6 +1,6 @@
 const skills = [
   {
-    title: "Programming Languages",
+    title: "Programming",
     skills: [
       "Python",
       "Java",
@@ -11,33 +11,31 @@ const skills = [
     ],
   },
   {
-    title: "Web Development",
+    title: "Frontend & UI",
     skills: [
       "HTML5",
       "CSS3",
       "React",
       "Tailwind CSS",
-      "Streamlit",
     ],
   },
   {
-    title: "Data Science",
+    title: "Backend & Data",
     skills: [
       "Pandas",
       "NumPy",
       "Plotly",
-      "Data Visualization",
+      "Streamlit",
     ],
   },
   {
-    title: "Tools & Learning",
+    title: "Developer Tools",
     skills: [
       "Git",
       "GitHub",
       "VS Code",
       "Linux",
       "TryHackMe",
-      "Cybersecurity",
     ],
   },
 ];
