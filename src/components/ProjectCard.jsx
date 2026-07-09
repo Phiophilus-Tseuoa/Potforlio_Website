@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import Button from "./Button";
+import Badge from "./Badge";
 
 export default function ProjectCard({
   image,
@@ -48,15 +49,12 @@ export default function ProjectCard({
             {title}
           </h3>
 
-          <span
-            className={`px-3 py-1 rounded-full text-xs font-semibold ${
-              status === "Completed"
-                ? "bg-green-600"
-                : "bg-yellow-600"
-            }`}
-          >
-            {status}
-          </span>
+          <Badge variant={
+            status === "Completed"
+            ? "success"
+            : "warning"
+          }>{status}</Badge>
+          
         </div>
 
         <p className="text-blue-400 font-medium mb-3">
